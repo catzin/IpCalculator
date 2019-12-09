@@ -1,0 +1,4 @@
+Para hacer uso de esta calculadora debes asegurarte
+de tener instalado Qt5.
+Este practica fue hecha para la materia de Redes de Computadoras
+en ESCOM , con el profesor Quintanilla.
