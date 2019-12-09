@@ -2,7 +2,6 @@ from PyQt5.QtCore import pyqtSlot
 import sys
 from PyQt5.QtWidgets import *
 from ip import *
-from ventanaDatosIp import *
 
 class Menu:
 

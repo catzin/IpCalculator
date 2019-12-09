@@ -488,33 +488,3 @@ class ip:
             num_sub = pow(2,bitsPAraRed)
             self.numSub = num_sub
             self.SubNetC(num_sub)
-
-        
-
-        
-      
-       
-
-
-       
-        
-
-
-
-
-
-
-
-"""entrada = "128.2.0.0"
-
-ipe = ip(entrada)
-ipe.tipo()
-
-ipe.subRedesHost(50)
-
-
-print(ipe.subRedes)"""
-
-
-
-
