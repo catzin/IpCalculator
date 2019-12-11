@@ -19,87 +19,88 @@ class Menu:
 
         self.linea = QLineEdit(self.window)
         self.linea.setGeometry(20,22,100,30)
-        self.linea.setStyleSheet("background:#ECF0F1")
+        self.linea.setStyleSheet("background:#ECF0F1;color:black")
+        
 
         self.prefijo = QLabel(self.window)
         self.prefijo.setGeometry(130,22,50,30)
-        self.prefijo.setStyleSheet("background:#ECF0F1")
+        self.prefijo.setStyleSheet("background:#ECF0F1;color:black")
 
         self.clase = QLabel(self.window)
         self.clase.setGeometry(190,22,50,30)
-        self.clase.setStyleSheet("background:#ECF0F1")
+        self.clase.setStyleSheet("background:#ECF0F1;color:black")
 
         self.mask = QLabel(self.window)
         self.mask.setGeometry(250,22,100,30)
-        self.mask.setStyleSheet("background:#ECF0F1")
+        self.mask.setStyleSheet("background:#ECF0F1;color:black")
 
         self.tipe = QLabel(self.window)
         self.tipe.setGeometry(370,22,80,30)
-        self.tipe.setStyleSheet("background:#ECF0F1")
+        self.tipe.setStyleSheet("background:#ECF0F1;color:black")
 
         self.info = QPushButton(self.window)
         self.info.setText("Información")
-        self.info.setStyleSheet("background:#FEFB63")
+        self.info.setStyleSheet("background:#FEFB63;color:black")
         self.info.setGeometry(20,60,100,30)
         self.info.clicked.connect(self.informacion)
 
         self.opcion = QComboBox(self.window)
         self.opcion.addItems(["host","subredes"])
-        self.opcion.setStyleSheet("background:#FEFB63")
+        self.opcion.setStyleSheet("background:#FEFB63;color:black")
         self.opcion.setGeometry(20,115,120,30)
         #self.opcion.clicked.connect(self.informacion)
 
         self.numSub = QLineEdit(self.window)
         self.numSub.setGeometry(150,115,100,30)
-        self.numSub.setStyleSheet("background:#ECF0F1")
+        self.numSub.setStyleSheet("background:#ECF0F1;color:black")
 
         self.calcular = QPushButton(self.window)
         self.calcular.setText("Calcular")
         self.calcular.setGeometry(255,115,100,30)
-        self.calcular.setStyleSheet("background:#FEFB63")
+        self.calcular.setStyleSheet("background:#FEFB63;color:black")
         self.calcular.clicked.connect(self.DatosCalculo)
 
         self.respuestas = QListWidget(self.window)
-        self.respuestas.setStyleSheet("background:#ECF0F1")
+        self.respuestas.setStyleSheet("background:#ECF0F1;color:black")
         self.respuestas.setGeometry(20,220,300,300)
 
         self.respuestas2 = QListWidget(self.window)
-        self.respuestas2.setStyleSheet("background:#ECF0F1")
+        self.respuestas2.setStyleSheet("background:#ECF0F1;color:black")
         self.respuestas2.setGeometry(350,220,300,300)
 
         self.datoSubredes = QLabel(self.window)
         self.datoSubredes.setGeometry(480,115,100,30)
-        self.datoSubredes.setStyleSheet("background:#ECF0F1")
+        self.datoSubredes.setStyleSheet("background:#ECF0F1;color:black")
 
         self.datoHost = QLabel(self.window)
         self.datoHost.setGeometry(370,115,90,30)
-        self.datoHost.setStyleSheet("background:#ECF0F1")
+        self.datoHost.setStyleSheet("background:#ECF0F1;color:black")
 
         self.maskSubred = QLabel(self.window)
         self.maskSubred.setGeometry(605,115,110,30)
-        self.maskSubred.setStyleSheet("background:#ECF0F1")
+        self.maskSubred.setStyleSheet("background:#ECF0F1;color:black")
 
         self.subred = QPushButton(self.window)
         self.subred.setText("Listar subRedes")
-        self.subred.setStyleSheet("background:#FEFB63")
+        self.subred.setStyleSheet("background:#FEFB63;color:black")
         self.subred.setGeometry(110,180,100,30)
         self.subred.clicked.connect(self.listarSubredes)
 
         self.host = QPushButton(self.window)
         self.host.setText("Listar Host")
-        self.host.setStyleSheet("background:#FEFB63")
+        self.host.setStyleSheet("background:#FEFB63;color:black")
         self.host.setGeometry(380,180,100,30)
         self.host.clicked.connect(self.listarHost)
 
         self.refrescaH = QPushButton(self.window)
         self.refrescaH.setText("Refrescar Host!")
-        self.refrescaH.setStyleSheet("background:#FEFB63")
+        self.refrescaH.setStyleSheet("background:#FEFB63;color:black")
         self.refrescaH.setGeometry(550,180,100,30)
         self.refrescaH.clicked.connect(self.refrescarHost)
 
         self.refresca = QPushButton(self.window)
         self.refresca.setText("Refrescar!")
-        self.refresca.setStyleSheet("background:#FEFB63")
+        self.refresca.setStyleSheet("background:#FEFB63;color:black")
         self.refresca.setGeometry(500,530,100,30)
         self.refresca.clicked.connect(self.refrescar)
 
@@ -114,13 +115,13 @@ class Menu:
         else:
             self.ipe = ip(self.entrada)
             self.ipe.tipo()
-            self.prefijo.setStyleSheet("background:#76D7C4")
+            self.prefijo.setStyleSheet("background:#76D7C4;color:black")
             self.prefijo.setText(self.ipe.prefijo)
-            self.tipe.setStyleSheet("background:#76D7C4")
+            self.tipe.setStyleSheet("background:#76D7C4;color:black")
             self.tipe.setText(self.ipe.typo)
-            self.clase.setStyleSheet("background:#76D7C4")
+            self.clase.setStyleSheet("background:#76D7C4;color:black")
             self.clase.setText(self.ipe.clase)
-            self.mask.setStyleSheet("background:#76D7C4")
+            self.mask.setStyleSheet("background:#76D7C4;color:black")
             self.mask.setText(self.ipe.mask)
     
     def DatosCalculo(self):
